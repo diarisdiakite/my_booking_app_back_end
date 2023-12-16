@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  car: one
+  finance_fee: 1
+  option_to_purchase_fee: 1
+  total_amount_payable: 1
+  duration: 1
+
+two:
+  car: two
+  finance_fee: 1
+  option_to_purchase_fee: 1
+  total_amount_payable: 1
+  duration: 1
