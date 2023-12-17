@@ -11,9 +11,7 @@ Rails.application.routes.draw do
       resources :cars, defaults: { format: :json }
 
       resources :users, defaults: { format: :json } do
-        resources :cars, defaults: { format: :json } do
-          resources :reservations, defaults: { format: :json }
-        end
+        resources :reservations, defaults: { format: :json }
       end
       # ... other API resources ...
     end
