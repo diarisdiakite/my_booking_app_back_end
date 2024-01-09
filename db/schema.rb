@@ -28,14 +28,6 @@ ActiveRecord::Schema[7.0].define(version: 2024_01_09_000631) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "jwt_denylist", force: :cascade do |t|
-    t.string "jti", null: false
-    t.datetime "exp", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["jti"], name: "index_jwt_denylist_on_jti"
-  end
-
   create_table "reservations", force: :cascade do |t|
     t.bigint "car_id", null: false
     t.integer "finance_fee"
