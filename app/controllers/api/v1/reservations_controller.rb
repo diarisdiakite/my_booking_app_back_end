@@ -1,5 +1,5 @@
 class Api::V1::ReservationsController < ApplicationController
-  before_action :set_reservation, only: %i[ show edit update destroy ]
+  before_action :set_reservation, only: %i[show edit update destroy]
 
   # GET /reservations or /reservations.json
   def index
@@ -20,7 +20,7 @@ class Api::V1::ReservationsController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def reservation_params
-    params.require(:reservation).permit(:car, :user, :finance_fee, :option_to_purchase_fee, :total_amount_payable, :duration)
+    params.require(:reservation).permit(:car, :user, :finance_fee, :option_to_purchase_fee, :total_amount_payable,
+                                        :duration)
   end
 end
-  
